@@ -1,17 +1,22 @@
-import React from 'react';
+import React from 'react'
 
 export const Nav = () => {
   return (
-    <div className='bg-indigo-900 text-white text-sm'>
-      <a href="/" className='font-extrabold'>Hacker News</a>
-      <a href="/" className='mr-0.5'> new</a> |
-      <a href="/" className='mr-0.5'> past</a> |
-      <a href="/" className='mr-0.5'> comments</a> |
-      <a href="/" className='mr-0.5'> ask</a> |
-      <a href="/" className='mr-0.5'> show</a> |
-      <a href="/" className='mr-0.5'> jobs</a> |
-      <a href="/" className='mr-0.5'> submit</a> |
-      <a href="/" className='font-extrabold'>login</a>
-    </div>
+    <div className="navbar bg-gray-100 dark:bg-black mg-gray-100 text-sm">
+
+      <a href="/" className='font-bold text-black  dark:text-withe'>
+        Hacker News
+      </a> |
+      <a href="/"> new </a> |
+      <a href="/"> threads </a> |
+      <a href="/"> comments </a> |
+      <a href="/"> ask </a> |
+      <a href="/"> show </a> |
+      <a href="/"> jobs </a> |
+      <a href="/"> submit </a> |
+      <a href="/" className="mr-0">
+        login
+      </a>
+    </div >
   )
 }
