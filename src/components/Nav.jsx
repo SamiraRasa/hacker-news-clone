@@ -2,21 +2,36 @@ import React from 'react'
 
 export const Nav = () => {
   return (
-    <div className="navbar bg-gray-100 dark:bg-black mg-gray-100 text-sm">
+    <nav className="md:flex hidden my-4 mx-4 justify-between">
+      <ul data-menu className="md:flex hidden items-center justify-start">
+        <li className="md:px-4 py-2">
+          <a href="/" className="font-bold hover:text-gray-500 hover:opacity-75">New</a>
+        </li>
+        <li className="md:px-4 py-2">
+          <a href="/" className="hover:text-gray-500 hover:opacity-75">Threads</a>
+        </li>
+        <li className="md:px-4 py-2">
+          <a href="/" className="hover:text-gray-500 hover:opacity-75">Comments</a>
+        </li>
+        <li className="md:px-4 py-2">
+          <a href="/" className="hover:text-gray-500 hover:opacity-75">Ask</a>
+        </li>
+        <li className="md:px-4 py-2">
+          <a href="/" className="hover:text-gray-500 hover:opacity-75">Show</a>
+        </li>
+        <li className="md:px-4 py-2">
+          <a href="/" className="hover:text-gray-500 hover:opacity-75">Job</a>
+        </li>
+        <li className="md:px-6 py-2">
+          <a href="/" className="hover:text-gray-500 hover:opacity-75">Submit</a>
+        </li>
+      </ul>
+      <ul className="navbar md:flex hidden items-center justify-start">
 
-      <a href="/" className='font-bold text-black  dark:text-withe'>
-        Hacker News
-      </a> |
-      <a href="/"> new </a> |
-      <a href="/"> threads </a> |
-      <a href="/"> comments </a> |
-      <a href="/"> ask </a> |
-      <a href="/"> show </a> |
-      <a href="/"> jobs </a> |
-      <a href="/"> submit </a> |
-      <a href="/" className="mr-0">
-        login
-      </a>
-    </div >
+        <div className="w-full md:flex hidden items-center justify-between">
+          <a href="#" className="md:flex items-center justify-center bg-transparent px-4 py-2 rounded border-red-300 border-2 hover:opacity-75">Login</a>
+        </div>
+      </ul>
+    </nav >
   )
 }
